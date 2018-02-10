@@ -10,5 +10,7 @@ describe('Canvas', () => {
     const str = cv.toDataURL();
     assert(typeof str === 'string')
     // console.log(cv.toDataURL());
+    const buf = cv.toBuffer();
+    assert(Buffer.isBuffer(buf))
   });
 });
