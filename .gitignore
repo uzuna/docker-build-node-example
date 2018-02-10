@@ -2,6 +2,11 @@ docs/
 work*.json
 docker/data
 package-lock.json
+
+### Vagrant ###
+.vagrant/
+*.box
+
 # Created by https://www.gitignore.io/api/python
 
 ### Python ###

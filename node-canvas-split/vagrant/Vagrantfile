@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "centos/7"
+
+  config.vm.define "provis" do |atomic|
+    atomic.vm.hostname = "docker.local.net"
+    atomic.vm.synced_folder "../", "/vagrant",
+      type: "rsync", 
+      rsync__exclude: ".git/",
+      rsync_auto: true,
+      owner: "vagrant",
+      group: "vagrant"
+    atomic.vm.network "private_network", ip: "192.168.34.1", virtualbox__intnet: "intra"
+    atomic.vm.provider "virtualbox" do |vm|
+      vm.memory = 1024
+    end
+  end
+end

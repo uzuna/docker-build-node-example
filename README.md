@@ -50,3 +50,20 @@ demo|0.0.2-build|build alpine|414MB
 demo|0.0.2|build alpine -> deploy alpine|114MB
 demo|0.0.1|build node -> alpine(動かない)|99.9MB
 demo|latest|build node|729MB
+
+
+### vagrant
+
+```sh
+# term1
+vagrant rsync-auto
+
+# term2
+vagrant up
+vagrant ssh
+
+# in VM
+sudo yum install ansible -y
+cd /vagrant/ansible
+ansible-playbook setup.yml
+```
