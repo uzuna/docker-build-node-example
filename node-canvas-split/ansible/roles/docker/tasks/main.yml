@@ -1,0 +1,28 @@
+
+- name: install docker
+  become: yes
+  yum:
+    name: docker
+    state: present
+
+- name: Add docker group
+  become: yes
+  group:
+    name: docker
+    state: present
+
+- name: Add user to docker group
+  user: 
+    name: vagrant
+    groups: docker
+    append: yes
+  tags: dockerhost
+  become: yes
+
+- name: restart docker
+  become: yes
+  systemd:
+    name: docker.service
+    state: started
+    daemon_reload: yes
+    enabled: yes
