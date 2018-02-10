@@ -14,24 +14,23 @@
 
 ```
 Client:
- Version:	18.01.0-ce
- API version:	1.35
- Go version:	go1.9.2
- Git commit:	03596f51b1
- Built:	Sun Jan 14 23:10:39 2018
- OS/Arch:	linux/amd64
- Experimental:	false
- Orchestrator:	swarm
+ Version:         1.12.6
+ API version:     1.24
+ Package version: docker-1.12.6-71.git3e8e77d.el7.centos.1.x86_64
+ Go version:      go1.8.3
+ Git commit:      3e8e77d/1.12.6
+ Built:           Tue Jan 30 09:17:00 2018
+ OS/Arch:         linux/amd64
 
 Server:
- Engine:
-  Version:	18.01.0-ce
-  API version:	1.35 (minimum version 1.12)
-  Go version:	go1.9.2
-  Git commit:	03596f51b1
-  Built:	Sun Jan 14 23:11:14 2018
-  OS/Arch:	linux/amd64
-  Experimental:	false
+ Version:         1.12.6
+ API version:     1.24
+ Package version: docker-1.12.6-71.git3e8e77d.el7.centos.1.x86_64
+ Go version:      go1.8.3
+ Git commit:      3e8e77d/1.12.6
+ Built:           Tue Jan 30 09:17:00 2018
+ OS/Arch:         linux/amd64
+
 
 ```
 
