@@ -11,3 +11,6 @@ build:
 
 test:
 	docker run --rm $(NAME):$(VERSION) npm test
+
+testsh:
+	docker run --rm -it $(NAME):$(VERSION) sh
