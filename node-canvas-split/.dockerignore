@@ -1,4 +1,8 @@
 node_modules
 lib
 package-lock.json
-Dockefile
+Dockerfile
+Dockerfile.build
+Makefile
+ansible
+.dockerignore
