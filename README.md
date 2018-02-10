@@ -13,6 +13,13 @@
 
 ### MultiStageの場合
 
+ nodejs -> nodejs-alpineはだめ。
 > Error: Error loading shared library libpixman-1.so.0: No such file or directory (needed by /usr/src/app/node_modules/canvas/build/Release/canvas.node)
 
-shared library libpixman-1.so.0へのlinkが切れて動かなかった
+
+
+```
+demo                                                0.0.2                  2fe41b0622b9        14 seconds ago      114MB
+demo                                                0.0.1                  7487e355047e        2 hours ago         99.9MB
+demo                                                latest                 13f072b6b707        2 hours ago         729MB
+```
