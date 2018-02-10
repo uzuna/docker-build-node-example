@@ -7,8 +7,15 @@
 次はgolangのリリースにgopackageが不要であるということ
 
 
+### 結論
+
+__alpineべビルドして、ビルド後の結果をrelease用のalpieにコピーするのが適当__
+
+
 1. buildとprod imageを分割できるかどうか -> 可能
-2. alpineでcanvas installができるかどうか
+2. alpineでcanvas installができるかどうか -> 可能
+
+
 
 ### 検証環境
 
